@@ -1,0 +1,13 @@
+<!DOCTYPE suite SYSTEM "http://beust.com/testng/testng-1.0.dtd" >
+<suite name="My test suite2">
+    <test name="testing2">
+        <groups>
+            <run>
+                <include name="method1"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="Task1Test2" />
+        </classes>
+    </test>
+</suite>

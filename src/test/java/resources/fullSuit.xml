@@ -1,0 +1,11 @@
+<!DOCTYPE suite SYSTEM "http://beust.com/testng/testng-1.0.dtd" >
+<suite name="My test suite">
+    <test name="testing">
+        <classes>
+            <class name="Task1Test" />
+            <class name="Task1Test2" />
+            <class name="Task1Test3" />
+            <class name="Task1TestTimeoutProgram" />
+        </classes>
+    </test>
+</suite>
