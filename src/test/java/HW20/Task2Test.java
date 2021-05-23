@@ -1,3 +1,6 @@
+package HW20;
+
+import HW20.PropertiesReaderClassLoader;
 import org.testng.annotations.Test;
 
 public class Task2Test {

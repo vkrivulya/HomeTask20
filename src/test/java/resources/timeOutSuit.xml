@@ -3,7 +3,7 @@
 <suite name="test_suite4">
     <test name="TimeOut Program">
         <classes>
-            <class name="Task1TestTimeoutProgram"/>
+            <class name="HW20.Task1TestTimeoutProgram"/>
         </classes>
     </test> <!-- Test -->
 </suite> <!-- Suite -->

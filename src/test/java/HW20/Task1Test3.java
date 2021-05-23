@@ -1,3 +1,5 @@
+package HW20;
+
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 

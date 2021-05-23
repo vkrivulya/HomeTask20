@@ -3,7 +3,7 @@
     <test name="testing3">
         <parameter name="number" value="2"/>
         <classes>
-            <class name="Task1Test2" />
+            <class name="HW20.Task1Test2" />
         </classes>
     </test>
 </suite>

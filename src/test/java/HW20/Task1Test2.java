@@ -1,9 +1,8 @@
+package HW20;
 
+import HW20.Task1;
 import org.openqa.selenium.NoSuchFrameException;
-import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
-import org.testng.annotations.Optional;
-import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import java.util.*;

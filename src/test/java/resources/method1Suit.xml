@@ -7,7 +7,7 @@
             </run>
         </groups>
         <classes>
-            <class name="Task1Test2" />
+            <class name="HW20.Task1Test2" />
         </classes>
     </test>
 </suite>

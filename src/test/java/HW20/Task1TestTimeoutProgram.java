@@ -1,3 +1,5 @@
+package HW20;
+
 import org.testng.annotations.Test;
 public class Task1TestTimeoutProgram
 {
