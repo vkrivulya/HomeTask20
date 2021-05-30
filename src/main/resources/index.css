@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.header-app-title {
+    padding: 20px;
+    text-align: center;
+    border-bottom: 2px solid black;
+}
+
+.header-logging-state {
+    padding: 5px;
+    text-align: right;
+    border-bottom: 2px solid black;
+}
+
+.main {
+    height: calc(100vh - 107px);
+    display: flex;
+    flex-grow: 1;
+}
+
+.footer {
+    border-top: 2px solid black;
+    text-align: center;
+}
+
+.left-col {
+
+}

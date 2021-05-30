@@ -43,7 +43,7 @@ public class DemoGuruLoginTest {
         String validLogin = "1303";
         driver.findElement(By.name("uid")).sendKeys(validLogin);
         String validPassword = "Guru99";
-        driver.findElement(By.name("validPassword")).sendKeys(validPassword);
+        driver.findElement(By.name("password")).sendKeys(validPassword);
         driver.findElement(By.name("btnLogin")).click();
         WebElement logOutLink = wait.until(presenceOfElementLocated(By.linkText("Log out")));
         logOutLink.click();
@@ -55,7 +55,7 @@ public class DemoGuruLoginTest {
     @Test(dataProvider = "data-provider", dataProviderClass = DataProviderNew.class)
     public void instanceDataProvider(String login, String password) {
         driver.findElement(By.name("uid")).sendKeys(login);
-        driver.findElement(By.name("validPassword")).sendKeys(password);
+        driver.findElement(By.name("password")).sendKeys(password);
         driver.findElement(By.name("btnLogin")).click();
         String errorText = "User or Password is not valid";
         assertEquals(driver.switchTo().alert().getText(), errorText);
