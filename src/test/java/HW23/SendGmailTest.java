@@ -68,16 +68,18 @@ public class SendGmailTest {
         WebElement bodyEmail = wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("[class='Am Al editable LW-avf tS-tW']")));
         bodyEmail.sendKeys("some text");
 
-//        WebElement upload_file = wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("input[name='Filedata']")));
-//        WebElement upload_file = wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("input[name='attach']")));
-//        WebElement upload_file = wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("[class='vI']")));
-//        upload_file.sendKeys ("/Users/v.kryvulia/Desktop/file.txt");
 
         WebElement attachButton = wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("[class='a1 aaA aMZ']")));
         attachButton.click();
 
+
+////        WebElement upload_file = wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("input[name='Filedata']")));
+//        WebElement upload_file = wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("input[name='attach']")));
+////        WebElement upload_file = wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("[class='vI']")));
+//        upload_file.sendKeys ("/Users/user/Desktop/git.txt");
+
         Robot robot = new Robot();
-        StringSelection ss = new StringSelection("/Users/v.kryvulia/Desktop/file.txt");
+        StringSelection ss = new StringSelection("/Users/user/Desktop/git.txt");
         Toolkit.getDefaultToolkit().getSystemClipboard().setContents(ss, null);
         robot.keyPress(KeyEvent.VK_CONTROL);
         robot.keyPress(KeyEvent.VK_V);
@@ -85,6 +87,8 @@ public class SendGmailTest {
         robot.keyRelease(KeyEvent.VK_CONTROL);
         robot.keyPress(KeyEvent.VK_ENTER);
         robot.keyRelease(KeyEvent.VK_ENTER);
+        robot.delay(2000);
+        robot.keyPress(KeyEvent.VK_ENTER);
 
         WebElement sendButton = wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("[class='T-I J-J5-Ji aoO v7 T-I-atl L3']")));
         sendButton.click();

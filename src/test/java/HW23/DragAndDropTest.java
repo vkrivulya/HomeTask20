@@ -35,9 +35,8 @@ public class DragAndDropTest {
     }
 
 
-
     @Test
-            public void dropTest() {
+    public void dropTest() {
         WebElement From1 = driver.findElement(By.xpath("//*[@id='credit2']/a"));
         WebElement To1 = driver.findElement(By.xpath("//*[@id='bank']/li"));
         WebElement From2 = driver.findElement(By.xpath("//*[@id='credit1']/a"));
